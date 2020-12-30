@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+a,span, p,img, li, :before, :after {
+  display: inline-block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.285;
+  font-weight: 400;
+  min-height: 200px;
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transform: all .5s ease ;
+  -webkit-transform: all .5s ease ;
+  -moz-transform: all .5s ease ;
+  -ms-transform: all .5s ease ;
+  -o-transform: all .5s ease ;
+}
+
+img {
+  width: 100%;
+} 
+
+/*========HEADER===========*/
+header {
+  background-color: rgb(88 148 245 / 20%);
+}
+
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+  padding: 10px;
+  
+}
+
+body {
+  background-color: rgb(219 221 234 / 54%);
+}
+
+.header__content p:first-child {
+  font-size: 3rem;
+}
+
+.header__content span {
+  color: #18cccc;
+}
+.header__content p:nth-child(2)::after {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid black;
+  content: '';
+  margin: 2px 5px;
+}
+
+.header__content p {
+  cursor: pointer;
+}
+
+.myBookmark {
+  border-bottom: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+.title-collection i {
+  cursor: pointer;
+}
+/*========MAIN===========*/
+.category__top {
+  margin-bottom: 30px;
+}
+.main-bookmark {
+  display: flex;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 0.1em solid black;
+}
+
+.categories {
+  padding: 20px 10px;
+  box-shadow: 2px 1px 2px 0px #01041099;
+  width: 25%;
+}
+
+.categories p {
+  cursor: pointer;
+}
+
+.category__content {
+  padding: 20px 30px;
+  width: 100%;
+}
+
+span.badge-medium {
+padding: 11px 10px;
+  margin: 0px 8px;
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.add {
+  cursor: pointer;
+  color: #1B94F7;
+}
+
+.item-img {
+  width: 12%;
+  padding: 10px;
+}
+
+.category-item {
+  display: flex;
+  border-top: 1px solid gray;
+  cursor: pointer;
+}
+
+.control i { 
+  padding: 4px;
+  border-radius: 5px;
+  color: gray;
+  margin: 12px 4px;
+
+}
+
+.category-item:hover {
+  background-color: rgb(157 156 191 / 26%);
+}
+
+.category__bottom h4 {
+  padding: 20px 0px; 
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: #1b1304;
+  
+}
+.input-group {
+  width: 50% !important;
+}
+
+i {
+  padding: 0 2px;
+}
+.item-content {
+  padding: 10px;
+  width: 70%;
+}
+
+.item-content p:first-child, .header__content p{
+  font-weight: 600;
+}
+
+.item-content p:not(:nth-child(-n + 2)) {
+  color: gray;
+  padding-right: 20px;
+}
+
+
+/*=====LOGIN=======*/
+.container-bookmark {
+  max-width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(219 221 234 / 54%);
+}
+
+.container-bookmark h1{
+  font-size: 2.5rem;
+}
+
+.container-bookmark span {
+  color: #18cccc;
+}
+
+.form-input {
+  margin-top: 40px;
+}
+
+.form-bookmark .form-sub input {
+  padding: 10px;
+  width: 80%;
+  margin: 10px 0;
+
+}
+
+.form-sub i {
+  position: absolute;
+  top: 60;
+  left: 0;
+}
+
+.submit input {
+  padding: 8px 20px;
+  width: 80%;
+  font-size: 17px;
+  color: wheat;
+  background-color: #04688a;
+  border: none;
+  margin: 20px 0 30px;
+  cursor: pointer;
+}
+
+
+.form-forgot {
+  text-align: right;
+  padding-right: 40px;
+}
+
+
+.form-icon i {
+  font-size: 1.5rem;
+  border: 1px solid none;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px 20px 50px;
+  color: white;
+}
+
+.icon-fb{
+  background-color: #046DE5;
+  padding: 10px 12px !important;
+}
+
+.icon-google {
+  background-color: #D93025;
+}
+
+.icon-twitter {
+  background-color: #1DA1F2;
+}
+
+.register p, .form-icon p {
+  color: gray;
+}
+
+.register a {
+  font-weight: 600;
+  padding-top: 10px;
+  color: #113158;
+}
+
+#sign-bookmark {
+  display: none;
+}
+
+
+
